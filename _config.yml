@@ -48,7 +48,6 @@ exclude:
 - LICENSE
 - Gemfile
 - Gemfile.lock
-- assets/js/plugins
 
 encoding: "utf-8"
 
