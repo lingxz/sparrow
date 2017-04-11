@@ -1,0 +1,12 @@
+---
+layout: page
+title: About
+---
+
+{{ content }}
+
+<h1 class="page__title">Recent Posts</h1>
+
+{% for post in site.posts limit:3 %}
+  {% include post-entry.html %}
+{% endfor %}

@@ -1,0 +1,15 @@
+poetry:
+  en: "Poetry"
+  ch: "诗歌"
+  link: /poetry
+  description: some of my poetry dating back to 2012. Dates preserved as closely to orignal writing as possible.
+
+essays:
+  en: "Essays"
+  ch: "随笔"
+  link: /essays
+  description: too artsy for the blog, too long for the facebook status.
+
+shortstories:
+  en: "Short Stories"
+  ch: "短篇小说"

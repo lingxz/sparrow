@@ -1,0 +1,17 @@
+# main links
+main:
+  - title: "home"
+    url: /
+  - title: "blog"
+    url: /blog
+  - title: "poetry"
+    url: /poetry
+  - title: "submenu"
+    url: /
+    children: 
+      - title: "item 2"
+        url: /404
+      - title: "item 1"
+        url: /404
+  - title: "RSS"
+    url: /feed.xml

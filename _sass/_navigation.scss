@@ -1,0 +1,181 @@
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+/*
+   Breadcrumb navigation links
+   ========================================================================== */
+
+.breadcrumbs {
+  @include container;
+  @include clearfix;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  -webkit-animation: intro 0.3s both;
+          animation: intro 0.3s both;
+  -webkit-animation-delay: 0.30s;
+          animation-delay: 0.30s;
+
+  @include breakpoint($large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+
+  ol {
+    padding: 0;
+    list-style: none;
+    font-size: $type-size-6;
+
+    @include breakpoint($large) {
+      @include span(10 of 12 last);
+    }
+
+    @include breakpoint($x-large) {
+      @include prefix(0.5 of 12);
+    }
+  }
+
+  li {
+    display: inline;
+  }
+
+  .current {
+    font-weight: bold;
+  }
+}
+
+
+/*
+   Post pagination navigation links
+   ========================================================================== */
+
+.pagination {
+  @include full();
+  @include clearfix();
+  margin-top: 1em;
+  padding-top: 1em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    display: block;
+    float: left;
+    margin-left: -1px;
+
+    a {
+      display: block;
+      margin-bottom: 0.25em;
+      padding: 0.5em 1em;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      border: 1px solid $border-color;
+      border-radius: 0;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+
+      &.current {
+        color: #fff;
+        background: $theme-color;
+      }
+
+      &.disabled {
+        color: mix(#fff, $gray, 75%);
+        pointer-events: none;
+        cursor: not-allowed;
+      }
+    }
+
+    &:first-child {
+      margin-left: 0;
+
+      a {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+      }
+    }
+
+    &:last-child {
+      a {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+    }
+  }
+
+  /* next/previous buttons */
+  &--pager {
+    display: block;
+    padding: 1em 2em;
+    float: left;
+    width: 50%;
+    font-size: $type-size-5;
+    text-align: center;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      color: $link-color;
+    }
+
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    &:last-child {
+      margin-left: -1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    &.disabled {
+      color: mix(#fff, $gray, 75%);
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    
+    &.previous {
+      .arrow {
+        @include span(2 of 12)
+      }
+      .text {
+        @include span(10 of 12 last)
+      }
+    }
+
+    &.next{
+      .arrow {
+        @include span(2 of 12 last)
+      }
+      .text {
+        @include span(10 of 12)
+      }
+    }
+  }
+}
+
+.page__content + .pagination,
+.page__meta + .pagination,
+.page__share + .pagination,
+.page__comments + .pagination {
+  margin-top: 2em;
+  padding-top: 0;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+

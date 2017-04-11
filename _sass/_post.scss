@@ -1,0 +1,123 @@
+/* ==========================================================================
+   SINGLE POST
+   ========================================================================== */
+
+#main {
+  @include container;
+  @include clearfix;
+  margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  -webkit-animation: intro 0.3s both;
+          animation: intro 0.3s both;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+  
+  @include breakpoint($medium) {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+  
+  @include breakpoint($x-x-large) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.post {
+  margin-bottom: 2em;
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: $max-width;
+  @include breakpoint($small) {
+    padding: 0 0.75rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+  }
+}
+
+.post__title {
+  margin-top: 0;
+  line-height: 1;
+  padding-bottom: 0.2em;
+  font-size: $type-size-1;
+  margin-bottom: 0;
+
+  & + .post__meta {
+    margin-top: -0.5em;
+  }
+}
+
+.post__content {
+
+  p, li, dl {
+    font-size: 1em;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      img {
+        box-shadow: 0 0 10px rgba(#000, 0.25);
+      }
+    }
+  }
+
+  dt {
+    margin-top: 1em;
+    font-weight: bold;
+  }
+
+  dd {
+    margin-left: 1em;
+    font-size: $type-size-6;
+  }
+
+  .small {
+    font-size: $type-size-6;
+  }
+
+  /* blockquote citations */
+  blockquote + .small {
+    margin-top: -1.5em;
+    padding-left: 1.25rem;
+  }
+}
+
+/*
+   Social sharing
+   ========================================================================== */
+
+.post__share {
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid $border-color;
+}
+
+/*
+   Page meta
+   ========================================================================== */
+
+.post__meta {
+  margin-top: 2em;
+  color: mix(#fff, $gray, 25%);
+  font-size: $type-size-5;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
