@@ -26,7 +26,7 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
   {% if page.next %}
     <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
   {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
+</nav>{% endraw %}
 ```
 
 ```ruby
