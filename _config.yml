@@ -1,41 +1,33 @@
 # Site Settings
+encoding                 : "utf-8"
 locale                   : "en"
 title                    : "Sparrow"
 title_separator          : "-"
 description              : "A clean, minimalistic, and fully responsive Jekyll theme"
 favicon                  : "/assets/images/bird.png"
 avatar                   : "/assets/images/bird.png"
-
 url                      : "https://theconfused.me/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog"
-repository               : "lingxz/sparrow" # GitHub username/repo-name e.g. "lingxz/sparrow"
 
 # Site Author
 author:
   name                   : "Lingyi" # appears in the footer and atom feed
 
-comments                 : true
+comments                 : true # set it to false to disable comments
 disqus:
   shortname              : sparrow-theme # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
-
-
 og_image                 : "/assets/images/bird.png" # Open Graph/Twitter default site image
-github:
-  username               : "lingxz"
 
+# Social sharing
+twitter:
+  username               : # optional, for social sharing
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-96137027-1"
 
@@ -48,8 +40,6 @@ exclude:
 - LICENSE
 - Gemfile
 - Gemfile.lock
-
-encoding: "utf-8"
 
 
 # Conversion
