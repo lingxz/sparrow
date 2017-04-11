@@ -6,7 +6,7 @@ title_separator          : "-"
 description              : "A clean, minimalistic, and fully responsive Jekyll theme"
 favicon                  : "/assets/images/bird.png"
 avatar                   : "/assets/images/bird.png"
-url                      : "https://theconfused.me/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog"
 
 # Site Author
