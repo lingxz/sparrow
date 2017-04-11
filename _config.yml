@@ -6,13 +6,13 @@ description              : "A clean, minimalistic, and fully responsive Jekyll t
 favicon                  : "/assets/images/bird.png"
 avatar                   : "/assets/images/bird.png"
 
-url                      : "http://theconfused.me/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://theconfused.me/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog"
 repository               : "lingxz/sparrow" # GitHub username/repo-name e.g. "lingxz/sparrow"
 
 # Site Author
 author:
-  name                   : "Your Name" # appears in the footer
+  name                   : "Lingyi" # appears in the footer and atom feed
 
 comments                 : true
 disqus:
@@ -42,6 +42,13 @@ analytics:
 # Reading Files
 include:
   - _pages
+# Files excluded from Jekyll builds
+exclude:
+- README.md
+- LICENSE
+- Gemfile
+- Gemfile.lock
+- assets/js/plugins
 
 encoding: "utf-8"
 

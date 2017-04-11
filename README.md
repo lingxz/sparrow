@@ -13,3 +13,4 @@ A responsive, simple Jekyll theme for a personal website.
 - 404 page included
 - SEO included
 - Typographic optimization for Chinese fonts
+- Atom feed with jekyll-feed
