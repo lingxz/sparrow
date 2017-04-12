@@ -15,8 +15,8 @@
 
 .page__item-title {
   a {
+    border-bottom: solid $theme-color;
     color: $entry-link-color;
-    text-decoration: none;
     &:hover { color: $entry-link-color-hover; }
   }
 }
