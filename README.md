@@ -4,6 +4,16 @@ A clean minimal Jekyll theme for writers.
 
 [Live Demo](http://theconfused.me/sparrow)
 
+- [Features](#features)
+- [Install](#install)
+    - [General configuration](#general-configuration)
+    - [Disqus](#disqus)
+    - [Google analytics](#google-analytics)
+    - [Collections](#collections)
+    - [Pagination](#pagination)
+    - [Front matter defaults](#front-matter-defaults)
+- [Credits](#)
+
 ## Screenshot 
 
 ![](screenshot1.png)
@@ -29,7 +39,7 @@ To run your site locally, do `bundle exec jekyll serve`.
 
 For customization, see below. 
 
-### Site customization
+### General configuration
 
 Customize these values in the `_config.yml` file: 
 
