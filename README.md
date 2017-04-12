@@ -13,3 +13,4 @@ A clean minimal Jekyll theme for writers.
 - 404 page included
 - Typographic optimization for Chinese fonts
 - Atom feed with jekyll-feed
+- Pagination enabled for blog using [Jekyll Paginate](https://github.com/jekyll/jekyll-paginate)

@@ -12,20 +12,6 @@
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.35s;
           animation-delay: 0.35s;
-  
-  @include breakpoint($medium) {
-    padding-left: 3em;
-    padding-right: 3em;
-  }
-
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
-  
-  @include breakpoint($x-x-large) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 }
 
 .post {
@@ -61,30 +47,6 @@
     font-size: 1em;
   }
 
-  a {
-    text-decoration: none;
-
-    &:hover {
-      img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
-      }
-    }
-  }
-
-  dt {
-    margin-top: 1em;
-    font-weight: bold;
-  }
-
-  dd {
-    margin-left: 1em;
-    font-size: $type-size-6;
-  }
-
-  .small {
-    font-size: $type-size-6;
-  }
-
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
@@ -104,7 +66,7 @@
 }
 
 /*
-   Page meta
+   Post meta
    ========================================================================== */
 
 .post__meta {

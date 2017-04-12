@@ -52,7 +52,7 @@
 
 
 /*
-   Post pagination navigation links
+   Pagination navigation links
    ========================================================================== */
 
 .pagination {
@@ -115,57 +115,6 @@
       }
     }
   }
-
-  /* next/previous buttons */
-  &--pager {
-    display: block;
-    padding: 1em 2em;
-    float: left;
-    width: 50%;
-    font-size: $type-size-5;
-    text-align: center;
-    text-decoration: none;
-    color: $text-color;
-
-    &:hover {
-      color: $link-color;
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    &.disabled {
-      color: mix(#fff, $gray, 75%);
-      pointer-events: none;
-      cursor: not-allowed;
-    }
-    
-    &.previous {
-      .arrow {
-        @include span(2 of 12)
-      }
-      .text {
-        @include span(10 of 12 last)
-      }
-    }
-
-    &.next{
-      .arrow {
-        @include span(2 of 12 last)
-      }
-      .text {
-        @include span(10 of 12)
-      }
-    }
-  }
 }
 
 .page__content + .pagination,
@@ -179,3 +128,79 @@
 }
 
 
+/*
+   Header navigation
+   ========================================================================== */
+
+
+.topnav {
+  -webkit-transform: translate3d(0, 0 , 0);
+          transform: translate3d(0, 0 , 0);
+
+  @include clearfix();
+  margin: auto;
+  margin-bottom: 2em;
+  max-width: $max-width;
+
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+  p, li {
+    font-size: $type-size-6;
+    line-height: 1.5;
+  }
+}
+
+.topnav__avatar {
+  display: table-cell;
+  vertical-align: top;
+  width: 7em;
+  height: 7em;
+  
+  @include breakpoint(max-width $x-small) {
+    width: 6em;
+    height: 6em;
+  }
+
+  img {
+
+    @include breakpoint($large) {
+      padding: 5px;
+    }
+  }
+}
+
+.topnav__content {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 15px;
+  padding-right: 25px;
+  line-height: 1;
+
+  @include breakpoint($large) {
+    padding-top: 1em;
+  }
+}
+
+.site__name {
+  margin: 0;
+  font-family: $header-font-family;
+  font-size: $type-size-2;
+}
+
+.site__bio {
+  margin: 0;
+}
+
+.menu-item {
+  display: inline-block;
+  a {
+    color: $text-color;
+  }
+}
+
+nav .links {
+  padding: 0;
+  font-size: $type-size-3;
+}

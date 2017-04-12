@@ -85,7 +85,6 @@ gems:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -93,7 +92,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jemoji
 
 
 # Front matter defaults
@@ -104,7 +102,6 @@ defaults:
       type: pages
     values:
       layout: page
-      author_profile: true
       comments: false
   # _posts
   - scope:
@@ -112,8 +109,6 @@ defaults:
       type: posts
     values:
       layout: post
-      author_profile: true
-      read_time: true
       comments: true
       share: true
   # _poetry
@@ -122,5 +117,4 @@ defaults:
       type: poetry
     values:
       layout: post
-      author_profile: true
       share: false

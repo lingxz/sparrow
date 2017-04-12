@@ -26,34 +26,18 @@ $susy: (
   gutter-position: after,
   container: $large,
   global-box-sizing: border-box,
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
 );
 @import "vendor/susy/susy";
 
 
-/*
-   Base
-   ========================================================================== */
-
-@import "mixins";
 @import "reset";
 @import "base";
 @import "utilities";
 @import "navigation";
+@import "buttons";
 @import "footer";
 @import "syntax";
 @import "rrssb";
 @import "slimmenu";
-
-/*
-   Layout specific
-   ========================================================================== */
-
 @import "post";
 @import "page";
-@import "topnav";
