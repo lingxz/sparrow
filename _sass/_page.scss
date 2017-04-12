@@ -27,7 +27,7 @@
   margin-bottom: 0.25em;
   font-family: $global-font-family;
   a {
-    border-bottom: solid $theme-color;
+    border-bottom: solid 1.5px $theme-color;
     color: $entry-link-color;
     &:hover { color: $entry-link-color-hover; }
   }
