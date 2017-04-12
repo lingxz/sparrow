@@ -11,14 +11,13 @@
   @include breakpoint($small) {
     padding: 0 0.75rem;
   }
+}
 
+.page__item-title {
   a {
     color: $entry-link-color;
     text-decoration: none;
-
-    &:hover {
-      color: $entry-link-color-hover;
-    }
+    &:hover { color: $entry-link-color-hover; }
   }
 }
 

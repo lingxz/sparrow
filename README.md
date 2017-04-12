@@ -1,6 +1,6 @@
 # Sparrow
 
-A responsive, simple Jekyll theme for a personal website. 
+A clean minimal Jekyll theme for writers. 
 
 ## Features
 
