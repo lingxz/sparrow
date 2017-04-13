@@ -15,7 +15,7 @@ A clean minimal Jekyll theme for writers.
     - [Navigation](#navigation)
     - [Front matter defaults](#front-matter-defaults)
     - [Other](#other)
-- [Credits](#)
+- [Credits](#credits)
 
 ## Screenshot 
 
@@ -149,6 +149,8 @@ defaults:
 To enhance SEO, you can add your twitter username to `_config.yml`. 
 
 You can also add a image path for the `og_image` value in the config file, for a default open graph sharing image. This value can be overridden in individual posts. 
+
+For the various config options see the [sample config file for the demo site](https://github.com/lingxz/sparrow/blob/master/_config.yml)
 
 There are also helper classes for ease of inserting image and their captions, adapted from the [Minimal Mistakes theme by Michael Rose](https://github.com/mmistakes/minimal-mistakes). You can find a [sample post with images](https://theconfused.me/sparrow/blog/post-with-image/) on the [demo site](https://theconfused.me/sparrow). 
 
