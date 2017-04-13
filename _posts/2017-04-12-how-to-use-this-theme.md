@@ -4,6 +4,20 @@ title: How to use this theme
 
 Just fork this repo and replace the posts with your own. Also rename the sample poetry collection to replace it with your own collection, or just delete it if you don't need to use collections. The example is poetry, but you can easily revamp this into essays, short stories, portfolio, or whatever your creative work is. 
 
+OR you can also install this theme as a theme gem. To do that, add to your Gemfile: 
+
+```ruby
+gem "sparrow-jekyll-theme"
+```
+
+And add this line site's `_config.yml`: 
+
+```yaml
+theme: sparrow-jekyll-theme
+```
+
+And then do `bundle install`. 
+
 To run your site locally, do `bundle exec jekyll serve`. 
 
 For customization, see below. 
