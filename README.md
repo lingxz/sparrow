@@ -23,6 +23,7 @@ A clean minimal Jekyll theme for writers.
 
 ## Features
 
+- Fully compatible with Github Pages
 - Configurable and responsive multi layer menu, adapted from [slimmenu](https://github.com/adnantopal/slimmenu)
 - Disqus integration
 - [Font Awesome icons](http://fontawesome.io/) included
