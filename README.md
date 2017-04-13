@@ -158,5 +158,5 @@ The color schemes and fonts can also be customized through scss, by editing the 
 
 ## Credits
 
-- Bird icon made by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)</a></div>
+- Bird icon made by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com) and is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
 - Photos from [Unsplash](https://unsplash.com/)
