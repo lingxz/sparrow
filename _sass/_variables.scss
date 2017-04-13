@@ -7,10 +7,11 @@
    ========================================================================== */
 
 $heebo                      : Heebo, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei Light", sans-serif;
-$gochi-hand                  : Gochi Hand, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+$gochi-hand                 : Gochi Hand, "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
 
 $global-font-family         : $heebo !default;
-$header-font-family         : $gochi-hand !default;
+$header-font-family         : $heebo !default;
+$fancy-font-family          : $gochi-hand !default;
 $caption-font-family        : $heebo !default;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
 
