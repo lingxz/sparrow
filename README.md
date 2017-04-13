@@ -18,7 +18,7 @@ A clean minimal Jekyll theme for writers.
 
 ## Screenshot 
 
-![](screenshot1.png)
+![](screenshot.png)
 
 ## Features
 

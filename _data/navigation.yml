@@ -9,9 +9,9 @@ main:
   - title: "submenu"
     url: /
     children: 
-      - title: "item 2"
-        url: /404
       - title: "item 1"
+        url: /404
+      - title: "item 2"
         url: /404
   - title: "subscribe"
     url: /feed.xml
