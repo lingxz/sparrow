@@ -82,15 +82,11 @@ collections:
 # Plugins
 gems:
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
 
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
 
 
