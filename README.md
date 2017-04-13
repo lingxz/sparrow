@@ -5,12 +5,14 @@ A clean minimal Jekyll theme for writers.
 [Live Demo](http://theconfused.me/sparrow)
 
 - [Features](#features)
+- [Why the name?](#why-the-name) 
 - [Install](#install)
     - [General configuration](#general-configuration)
     - [Disqus](#disqus)
     - [Google analytics](#google-analytics)
     - [Collections](#collections)
     - [Pagination](#pagination)
+    - [Navigation](#navigation)
     - [Front matter defaults](#front-matter-defaults)
 - [Credits](#)
 
@@ -24,12 +26,16 @@ A clean minimal Jekyll theme for writers.
 - Disqus integration
 - [Font Awesome icons](http://fontawesome.io/) included
 - Google analytics
-- Social sharing using [Ridiculously Responsive Social Sharing Buttons](https://www.rrssb.ml/)
+- Social sharing using [rrssb](https://www.rrssb.ml/)
 - 404 page included
 - Typographic optimization for Chinese fonts
-- Atom feed with jekyll-feed
-- Pagination enabled for blog using [Jekyll Paginate](https://github.com/jekyll/jekyll-paginate)
+- Atom feed generated with [jekyll-feed](https://github.com/jekyll/jekyll-feed)
+- Pagination enabled for blog using [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
 - Basic SEO with Facebook Open Graph tags and Twitter cards
+
+## Why the name? 
+
+In Chinese there's a saying that goes 麻雀虽小，五脏俱全。It roughly translates to: small though a sparrow is, it possesses all internal organs. Small but complete is what this theme aspires to be. Minimal but includes all the essential aspects to building a blog. 
 
 ## Install
 
@@ -93,13 +99,17 @@ collections:
 
 Currently, pagination is set to a the blog page. Unfortunately Jekyll does not yet support pagination on multiple pages. 
 
-If you want to paginate on a different page, simply change the permalink value in the config file and create the relevant page. 
+If you want to paginate on a different page, simply change the `paginate_path` value in the config file and create the relevant page. 
 
 ```yaml
 paginate: 5 # amount of posts to show
 paginate_path: "/blog/page:num/"
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 ```
+
+### Navigation
+
+You can change the navigation links in `_data/navigation.yml`.
 
 ### Front matter defaults
 
@@ -131,6 +141,14 @@ defaults:
       layout: post
       share: false
 ```
+
+### Other
+
+To enhance SEO, you can add your twitter username to `_config.yml`. 
+
+You can also add a image path for the `og_image` value in the config file, for a default open graph sharing image. This value can be overridden in individual posts. 
+
+There are also helper classes for ease of inserting image and their captions, adapted from the [Minimal Mistakes theme by Michael Rose](https://github.com/mmistakes/minimal-mistakes). You can find a [sample post with images](https://theconfused.me/sparrow/blog/post-with-image/) on the [demo site](https://theconfused.me/sparrow). 
 
 ## Credits
 

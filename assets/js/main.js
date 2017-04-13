@@ -22,9 +22,6 @@ $(document).ready(function(){
     }
   }, 250);
 
-  // init smooth scroll
-  $("a").smoothScroll({offset: -20});
-
   // init slimmenu responsive navigation
   $('#navigation').slimmenu(
   {
