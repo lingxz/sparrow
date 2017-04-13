@@ -1,5 +1,7 @@
 # Sparrow
 
+[![Gem Version](https://badge.fury.io/rb/sparrow-jekyll-theme.svg)](https://badge.fury.io/rb/sparrow-jekyll-theme)
+
 A clean minimal Jekyll theme for writers. 
 
 [Live Demo](http://theconfused.me/sparrow)
