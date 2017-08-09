@@ -2,7 +2,7 @@
  
 Gem::Specification.new do |spec|
   spec.name          = "sparrow-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Lingyi Hu"]
   spec.email         = ["lingyihuu@gmail.com"]
  
