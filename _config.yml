@@ -7,7 +7,7 @@ description              : "A clean and minimal theme for writers."
 favicon                  : "/assets/images/bird.png"
 avatar                   : "/assets/images/bird.png"
 url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog" leave blank if no subpath
+baseurl                  : "/blog" # the subpath of your site, e.g. "/blog" leave blank if no subpath
 
 # Site Author
 author:
