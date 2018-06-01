@@ -1,4 +1,5 @@
 # Site Settings
+theme: sparrow-jekyll-theme
 encoding                 : "utf-8"
 locale                   : "en"
 title                    : "Sparrow"
