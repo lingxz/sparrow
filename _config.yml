@@ -6,7 +6,7 @@ title_separator          : "-"
 description              : "A clean and minimal theme for writers."
 favicon                  : "/assets/images/bird.png"
 avatar                   : "/assets/images/bird.png"
-# url                      : "https://mihajlonesic.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://mihajlonesic.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog" leave blank if no subpath
 
 # Site Author
