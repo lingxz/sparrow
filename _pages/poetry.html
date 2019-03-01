@@ -3,8 +3,13 @@ layout: page
 title: "Poetry: a collection"
 permalink: /poetry/
 subtitle: You can write your own subtitle here, to tell people what your collection is about
+pagination:
+  enabled: true
+  collection: poetry
 ---
 
-{% for post in site.poetry reversed %}
-  {% include post-entry.html %}
+{% for post in paginator.posts %}
+	{% include post-entry.html %}
 {% endfor %}
+
+{% include paginator.html %}

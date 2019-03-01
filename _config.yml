@@ -75,7 +75,9 @@ pagination:
   enabled: true
   per_page: 5
   permalink: "/page:num/"
-  collection: "posts"
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
   trail: 
     before: 2 # The number of links before the current page
     after: 2  # The number of links after the current page
@@ -94,7 +96,7 @@ gems:
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-feed
 
 
