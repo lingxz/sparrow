@@ -2,7 +2,7 @@
  
 Gem::Specification.new do |spec|
   spec.name          = "sparrow-jekyll-theme"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Lingyi Hu"]
   spec.email         = ["lingyihuu@gmail.com"]
  
@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   end
  
   spec.add_runtime_dependency "jekyll", "~> 3.3"
-  spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
+  spec.add_runtime_dependency "jekyll-paginate-v2", "~> 2.1.0"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.8"
 
   spec.add_development_dependency "bundler", "~> 1.12"

@@ -1,3 +1,9 @@
+changelog:
+
+0.1.2
+
+- upgraded to jekyll-paginage-v2 and removed the old jekyll-paginate 
+
 # Sparrow
 
 [![Gem Version](https://badge.fury.io/rb/sparrow-jekyll-theme.svg)](https://badge.fury.io/rb/sparrow-jekyll-theme)
@@ -34,7 +40,7 @@ A clean minimal Jekyll theme for writers.
 - 404 page included
 - Typographic optimization for Chinese fonts
 - Atom feed generated with [jekyll-feed](https://github.com/jekyll/jekyll-feed)
-- Pagination enabled for blog using [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
+- Pagination enabled for blog using [jekyll-paginate-v2](https://github.com/sverrirs/jekyll-paginate-v2)
 - Basic SEO with Facebook Open Graph tags and Twitter cards
 
 ## Why the name? 
@@ -115,15 +121,7 @@ collections:
 
 ### Pagination
 
-Currently, pagination is set to a the blog page. Unfortunately Jekyll does not yet support pagination on multiple pages. 
-
-If you want to paginate on a different page, simply change the `paginate_path` value in the config file and create the relevant page. 
-
-```yaml
-paginate: 5 # amount of posts to show
-paginate_path: "/blog/page:num/"
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-```
+Pagination is done using jekyll-paginate-v2. Currently it is only turned on for the blog page, but it could possibly support pagination on multiple pages. Please read the [jekyll-paginate-v2 documentation](https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#creating-pagination-trails) for configuraiton. 
 
 ### Navigation
 
