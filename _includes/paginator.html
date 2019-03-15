@@ -1,8 +1,23 @@
 {% if paginator.page_trail %}
-  <nav class="pagination">
-  {% for trail in paginator.page_trail %}
-    <li><a {% if page.url == trail.path %}class="disabled current"{% endif %} href="{{ trail.path | absolute_url }}" title="{{trail.title}}">{{ trail.num }}</a></li>
-  {% endfor %}
-  </nav>
-{% endif %}
+    <nav class="pagination">
 
+        {% comment %} Link for previous page {% endcomment %}
+        {% if paginator.previous_page %}
+            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a></li>
+        {% else %}
+            <li><a href="#" class="disabled"><span aria-hidden="true">Previous</span></a></li>
+        {% endif %}
+
+        {% for trail in paginator.page_trail %}
+            <li><a {% if page.url == trail.path %}class="disabled current"{% endif %} href="{{ trail.path | absolute_url }}" title="{{trail.title}}">{{ trail.num }}</a></li>
+        {% endfor %}
+
+        {% comment %} Link next page {% endcomment %}
+        {% if paginator.next_page %}
+            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a></li></a></li>
+        {% else %}
+            <li><a href="#" class="disabled"><span aria-hidden="true">Next</span></a></li>
+        {% endif %}
+
+    </nav>
+{% endif %}
